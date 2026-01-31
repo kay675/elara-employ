@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Play, ArrowRight, Users, Shield, Clock } from "lucide-react";
+import { ArrowRight, Users, Shield, Clock } from "lucide-react";
 
 const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
 
@@ -29,7 +29,7 @@ const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 glass-card px-4 py-2 text-sm animate-fade-in-up">
               <Shield className="w-4 h-4 text-primary" />
-              <span className="text-muted-foreground">Kosovo-first, compliance-led EOR</span>
+              <span className="text-muted-foreground">Kosovo's compliance-led EOR</span>
             </div>
 
             {/* Headline */}
@@ -49,14 +49,8 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
               <Button asChild size="lg" className="btn-primary-glow border-0 text-lg h-14">
                 <a href={CTA_LINK} target="_blank" rel="noopener noreferrer">
-                  Book a 15-min Hiring Plan
+                  Book 30 min Hiring Plan
                   <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="btn-secondary-glass border text-lg h-14">
-                <a href="#demo">
-                  <Play className="mr-2 w-5 h-5" />
-                  Watch a Free Demo
                 </a>
               </Button>
             </div>
@@ -93,14 +87,31 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Column - Video Placeholder */}
+          {/* Right Column - Trust & Stats */}
           <div className="animate-fade-in-up delay-300">
-            <div className="glass-card glow-purple p-2 rounded-2xl">
-              <div className="aspect-video rounded-xl bg-secondary/50 flex flex-col items-center justify-center gap-4 border border-border">
-                <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center">
-                  <Play className="w-10 h-10 text-primary ml-1" />
-                </div>
-                <p className="text-muted-foreground font-medium">Demo Coming Soon</p>
+            <div className="glass-card glow-purple p-8 rounded-2xl">
+              <div className="text-center mb-6">
+                <p className="text-6xl font-bold gradient-text mb-2">£500</p>
+                <p className="text-xl text-foreground">Per employee, per month</p>
+                <p className="text-muted-foreground mt-2">
+                  Instead of £3–4k in the UK
+                </p>
+              </div>
+              <div className="border-t border-border pt-6">
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-center gap-2">
+                    <Shield className="w-4 h-4 text-primary" />
+                    <span>Full payroll, tax & compliance</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Users className="w-4 h-4 text-primary" />
+                    <span>70+ hires completed</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Clock className="w-4 h-4 text-primary" />
+                    <span>7–14 days to hire</span>
+                  </li>
+                </ul>
               </div>
             </div>
 

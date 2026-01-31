@@ -5,7 +5,7 @@ const benefits = [
   "Hire full-time employees without misclassification risk",
   "Payroll, tax, and contracts handled end-to-end",
   "Scale headcount without growing HR overhead",
-  "EU time zone, strong English, high-calibre talent",
+  "EU time zone, strong C-1 English, high-calibre talent",
 ];
 
 const whyNow = [

@@ -7,7 +7,7 @@ const plans = [
   {
     name: "Starter",
     description: "For your first Kosovo hires",
-    price: "€250",
+    price: "£250",
     period: "/employee/month",
     features: [
       "Legal employment contracts",
@@ -21,7 +21,7 @@ const plans = [
   {
     name: "Growth",
     description: "For scaling teams",
-    price: "€450",
+    price: "£450",
     period: "/employee/month",
     features: [
       "Everything in Starter",
@@ -35,12 +35,11 @@ const plans = [
   {
     name: "Automation+",
     description: "Full-service package",
-    price: "€600",
+    price: "£600",
     period: "/employee/month",
     features: [
       "Everything in Growth",
       "Equipment leasing",
-      "Visa & work permit support",
       "Workforce analytics",
       "24/7 priority support",
     ],

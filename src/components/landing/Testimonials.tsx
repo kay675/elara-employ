@@ -3,15 +3,15 @@ import { Quote, Star } from "lucide-react";
 const testimonials = [
   {
     quote: "We now have full-time employees working directly for us in Kosovo without setting up a legal entity — paying around £500 per employee per month instead of £3–4k in the UK, while Elara handles payroll, tax and compliance end-to-end.",
-    author: "Sarah Chen",
-    role: "Head of Operations",
-    company: "TechScale UK",
+    author: "Mezz Zare",
+    role: "CEO",
+    company: "Onsync.ai",
   },
   {
     quote: "The speed was incredible. We went from initial conversation to having our first developer fully onboarded in just 10 days. No legal complexity, no compliance headaches.",
-    author: "James Mitchell",
-    role: "CTO",
-    company: "FinFlow Solutions",
+    author: "Ahmed Gaal",
+    role: "Co-Founder",
+    company: "Clientswoop",
   },
   {
     quote: "Elara made hiring in Kosovo feel as simple as hiring locally. Their team handles everything from contracts to tax filings. We just manage the work.",

@@ -16,7 +16,7 @@ const metrics = [
   },
   {
     icon: Euro,
-    value: "€250–600",
+    value: "£250–600",
     label: "Simple monthly fee",
     description: "Transparent per-employee pricing",
   },
