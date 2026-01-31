@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import elaraLogo from "@/assets/elara-logo.jpg";
 
 const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
 
@@ -34,10 +35,7 @@ const Navigation = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
-              <span className="text-xl font-bold text-primary-foreground">E</span>
-            </div>
-            <span className="text-2xl font-bold text-foreground">Elara</span>
+            <img src={elaraLogo} alt="Elara" className="h-10 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
@@ -57,7 +55,7 @@ const Navigation = () => {
           <div className="hidden md:block">
             <Button asChild className="btn-primary-glow border-0">
               <a href={CTA_LINK} target="_blank" rel="noopener noreferrer">
-                Book a 15-min Hiring Plan
+                Book 30 min Hiring Plan
               </a>
             </Button>
           </div>
@@ -87,7 +85,7 @@ const Navigation = () => {
               ))}
               <Button asChild className="btn-primary-glow border-0 w-full mt-2">
                 <a href={CTA_LINK} target="_blank" rel="noopener noreferrer">
-                  Book a 15-min Hiring Plan
+                  Book 30 min Hiring Plan
                 </a>
               </Button>
             </div>

@@ -77,7 +77,7 @@ const FAQ = () => {
           </p>
           <Button asChild size="lg" className="btn-primary-glow border-0 text-lg h-14">
             <a href={CTA_LINK} target="_blank" rel="noopener noreferrer">
-              Book a 15-min Hiring Plan
+              Book 30 min Hiring Plan
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>
           </Button>

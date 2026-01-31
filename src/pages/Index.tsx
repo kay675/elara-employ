@@ -2,7 +2,6 @@ import Navigation from "@/components/landing/Navigation";
 import Hero from "@/components/landing/Hero";
 import Results from "@/components/landing/Results";
 import HowItWorks from "@/components/landing/HowItWorks";
-import Demo from "@/components/landing/Demo";
 import Benefits from "@/components/landing/Benefits";
 import Features from "@/components/landing/Features";
 import Testimonials from "@/components/landing/Testimonials";
@@ -10,6 +9,7 @@ import Pricing from "@/components/landing/Pricing";
 import Guarantee from "@/components/landing/Guarantee";
 import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
+import CookieConsent from "@/components/CookieConsent";
 
 const Index = () => {
   return (
@@ -19,7 +19,6 @@ const Index = () => {
         <Hero />
         <Results />
         <HowItWorks />
-        <Demo />
         <Benefits />
         <Features />
         <Testimonials />
@@ -28,6 +27,7 @@ const Index = () => {
         <FAQ />
       </main>
       <Footer />
+      <CookieConsent />
     </div>
   );
 };

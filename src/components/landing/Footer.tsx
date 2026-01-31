@@ -1,4 +1,6 @@
-import { Linkedin, Twitter, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { Link } from "react-router-dom";
+import elaraLogo from "@/assets/elara-logo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,33 +12,16 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary">
-                <span className="text-xl font-bold text-primary-foreground">E</span>
-              </div>
-              <span className="text-2xl font-bold">Elara</span>
+              <img src={elaraLogo} alt="Elara" className="h-10 w-auto" />
             </div>
             <p className="text-muted-foreground max-w-sm mb-6">
-              Kosovo-first Employer of Record. Helping UK & EU companies build 
+              Kosovo's Employer of Record. Helping UK & EU companies build 
               compliant, full-time teams in Kosovo — fast.
             </p>
             {/* Social links */}
             <div className="flex gap-4">
               <a
-                href="#"
-                className="h-10 w-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5 text-muted-foreground" />
-              </a>
-              <a
-                href="#"
-                className="h-10 w-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5 text-muted-foreground" />
-              </a>
-              <a
-                href="mailto:hello@elara.com"
+                href="mailto:aaron@elara-ero.com"
                 className="h-10 w-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary/20 transition-colors"
                 aria-label="Email"
               >
@@ -72,17 +57,17 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/privacy-policy" className="text-muted-foreground hover:text-foreground transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/terms-of-service" className="text-muted-foreground hover:text-foreground transition-colors">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="mailto:hello@elara.com" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a href="mailto:aaron@elara-ero.com" className="text-muted-foreground hover:text-foreground transition-colors">
                   Contact Us
                 </a>
               </li>

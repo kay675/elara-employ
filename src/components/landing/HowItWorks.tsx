@@ -14,7 +14,7 @@ const steps = [
     number: "02",
     icon: UserCheck,
     title: "We Employ & Onboard",
-    description: "Elara becomes the legal employer. We handle employment contracts, work permits, and compliant onboarding—all within 7–14 days.",
+    description: "Elara becomes the legal employer. We handle sourcing candidates, employment contracts and compliant onboarding—all within 7–14 days.",
   },
   {
     number: "03",
