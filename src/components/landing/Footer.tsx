@@ -1,6 +1,6 @@
 import { Mail } from "lucide-react";
 import { Link } from "react-router-dom";
-import elaraLogo from "@/assets/elara-logo.jpg";
+import elaraLogo from "@/assets/elara-logo-white.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
