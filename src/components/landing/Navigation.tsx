@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import elaraLogo from "@/assets/elara-logo-white.png";
+import elaraLogo from "@/assets/elara-logo-gradient.png";
 
 const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
 
@@ -35,7 +35,7 @@ const Navigation = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <img src={elaraLogo} alt="Elara" className="h-10 w-auto" />
+            <img src={elaraLogo} alt="Elara" className="h-14 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

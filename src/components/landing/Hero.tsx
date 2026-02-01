@@ -36,8 +36,9 @@ const Hero = () => {
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in-up delay-100">
               Hire in Kosovo in{" "}
-              <span className="gradient-text">7–14 Days</span>
-              {" "}— Without Setting Up an Entity
+              <span className="gradient-text">7-14 Days</span>
+              <br />
+              Without Setting Up an Entity
             </h1>
 
             {/* Subheadline */}
