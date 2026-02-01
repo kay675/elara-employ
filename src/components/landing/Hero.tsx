@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Shield, Clock } from "lucide-react";
+import pricingChart from "@/assets/pricing-chart.jpg";
 
 const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
 
@@ -87,32 +88,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Column - Trust & Stats */}
+          {/* Right Column - Pricing Chart */}
           <div className="animate-fade-in-up delay-300">
-            <div className="glass-card glow-purple p-8 rounded-2xl">
-              <div className="text-center mb-6">
-                <p className="text-6xl font-bold gradient-text mb-2">£500</p>
-                <p className="text-xl text-foreground">Per employee, per month</p>
-                <p className="text-muted-foreground mt-2">
-                  Instead of £3–4k in the UK
-                </p>
-              </div>
-              <div className="border-t border-border pt-6">
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-center gap-2">
-                    <Shield className="w-4 h-4 text-primary" />
-                    <span>Full payroll, tax & compliance</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Users className="w-4 h-4 text-primary" />
-                    <span>70+ hires completed</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-primary" />
-                    <span>7–14 days to hire</span>
-                  </li>
-                </ul>
-              </div>
+            <div className="glass-card glow-purple p-3 rounded-2xl">
+              <img 
+                src={pricingChart} 
+                alt="Salary Benchmarks by Role Type - Monthly rates in GBP" 
+                className="w-full rounded-xl"
+              />
             </div>
 
             {/* Trust logos placeholder */}

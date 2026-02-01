@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import elaraLogo from "@/assets/elara-logo.jpg";
+import elaraLogo from "@/assets/elara-logo-white.png";
 
 const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
 
