@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import elaraLogo from "@/assets/elara-logo-gradient.png";
 
 const TermsOfService = () => {
   return (
@@ -9,8 +8,8 @@ const TermsOfService = () => {
       {/* Header */}
       <header className="border-b border-border bg-background/90 backdrop-blur-xl sticky top-0 z-50">
         <div className="mx-auto max-w-4xl px-4 md:px-8 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <img src={elaraLogo} alt="Elara" className="h-14 w-auto" />
+          <Link to="/" className="flex items-center">
+            <span className="text-2xl md:text-3xl font-bold text-foreground">Elara</span>
           </Link>
           <Button asChild variant="ghost">
             <Link to="/">

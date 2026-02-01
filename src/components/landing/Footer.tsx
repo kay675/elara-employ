@@ -1,6 +1,5 @@
 import { Mail } from "lucide-react";
 import { Link } from "react-router-dom";
-import elaraLogo from "@/assets/elara-logo-gradient.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,8 +10,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <img src={elaraLogo} alt="Elara" className="h-14 w-auto" />
+            <div className="flex items-center mb-4">
+              <span className="text-3xl md:text-4xl font-bold text-foreground">Elara</span>
             </div>
             <p className="text-muted-foreground max-w-sm mb-6">
               Kosovo's Employer of Record. Helping UK & EU companies build 
