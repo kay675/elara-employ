@@ -5,7 +5,7 @@ const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
 
 const plans = [
   {
-    name: "Starter",
+    name: "Growth",
     description: "For your first Kosovo hires",
     price: "£250",
     period: "/employee/month",
@@ -14,36 +14,24 @@ const plans = [
       "Payroll & tax filings",
       "Social contributions",
       "Compliant onboarding",
-      "Email support",
     ],
     highlighted: false,
   },
   {
-    name: "Growth",
-    description: "For scaling teams",
+    name: "Enterprise",
+    description: "Full-service package",
     price: "£450",
     period: "/employee/month",
     features: [
-      "Everything in Starter",
+      "Everything in Growth",
       "Priority onboarding (7 days)",
       "Benefits administration",
       "Dedicated account manager",
       "Quarterly compliance reviews",
-    ],
-    highlighted: true,
-  },
-  {
-    name: "Automation+",
-    description: "Full-service package",
-    price: "£600",
-    period: "/employee/month",
-    features: [
-      "Everything in Growth",
       "Equipment leasing",
       "Workforce analytics",
-      "24/7 priority support",
     ],
-    highlighted: false,
+    highlighted: true,
   },
 ];
 
