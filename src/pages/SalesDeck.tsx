@@ -101,7 +101,7 @@ const SalesDeck = () => {
           <div className="bg-gray-50 print-bg p-6 rounded-lg border border-gray-200">
             <h3 className="font-bold text-lg mb-4">What You Handle</h3>
             <ul className="space-y-2">
-              {["Day-to-day work management", "Performance reviews", "Team communication", "Compensation strategy", "Project assignments"].map((item, i) => (
+              {["Day-to-day work management", "Performance reviews", "Team communication", "Compensation strategy", "Project assignments", "Integrate them as valued members of your team"].map((item, i) => (
                 <li key={i} className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-gray-400 rounded-full flex-shrink-0"></div>
                   <span>{item}</span>
@@ -307,8 +307,9 @@ const SalesDeck = () => {
             Book a 30-minute call to discuss your hiring needs and how Elara can help.
           </p>
           <div className="bg-purple-100 print-bg p-8 rounded-lg mt-8">
-            <p className="font-bold text-lg mb-4">Book a 30-min Hiring Plan Call</p>
-            <p className="text-purple-700 font-mono">calendar.app.google/ZgtedFMv5cXSefYU9</p>
+            <a href="https://calendar.app.google/ZgtedFMv5cXSefYU9" target="_blank" rel="noopener noreferrer" className="font-bold text-lg text-purple-700 underline hover:text-purple-900">
+              Book a 30-min Hiring Plan Call →
+            </a>
           </div>
           <div className="flex justify-center gap-8 mt-8 text-gray-600">
             <span>📅 Free consultation</span>
@@ -316,7 +317,7 @@ const SalesDeck = () => {
             <span>✅ No commitment</span>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-200">
-            <p className="text-gray-500">www.elara.co • hello@elara.co</p>
+            <p className="text-gray-500">www.elara-eor.com • kay@elara-eor.com</p>
           </div>
         </div>
       </div>
