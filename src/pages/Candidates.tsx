@@ -189,16 +189,13 @@ const Candidates = () => {
                 Example Google Form: https://docs.google.com/forms/d/e/XXXXX/viewform?embedded=true
               */}
               <iframe
-                src="about:blank"
+                src="https://api.onsync.ai/widget/form/qXsnlCHXxNCWvsH0yOGV"
                 title="Join Elara Talent Network"
                 className="w-full rounded-xl border-0"
-                style={{ minHeight: "700px" }}
+                style={{ minHeight: "1900px" }}
                 allow="camera; microphone; autoplay; encrypted-media"
                 loading="lazy"
               />
-              <p className="text-muted-foreground text-xs text-center mt-4">
-                Replace the iframe <code>src</code> with your form URL to activate.
-              </p>
             </div>
           </div>
         </section>
