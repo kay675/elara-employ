@@ -191,8 +191,7 @@ const Candidates = () => {
               <iframe
                 src="https://api.onsync.ai/widget/form/qXsnlCHXxNCWvsH0yOGV"
                 title="Join Elara Talent Network"
-                className="w-full rounded-xl border-0"
-                style={{ minHeight: "1900px" }}
+                className="w-full rounded-xl border-0 min-h-[3200px] md:min-h-[2600px]"
                 allow="camera; microphone; autoplay; encrypted-media"
                 loading="lazy"
               />
