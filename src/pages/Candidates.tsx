@@ -172,7 +172,7 @@ const Candidates = () => {
 
         {/* SECTION 6 — JOIN OUR TALENT NETWORK */}
         <section id="join" className="section-padding">
-          <div className="mx-auto max-w-3xl">
+          <div className="mx-auto max-w-4xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
                 Join our <span className="gradient-text">talent network</span>
@@ -181,16 +181,24 @@ const Candidates = () => {
                 Submit your details and we'll be in touch when a matching opportunity arises.
               </p>
             </div>
-            <div className="glass-card p-8 md:p-12">
-              {/* Placeholder for external form embed */}
-              <div className="border-2 border-dashed border-border rounded-xl p-12 text-center">
-                <p className="text-muted-foreground text-lg">
-                  External form embed goes here
-                </p>
-                <p className="text-muted-foreground text-sm mt-2">
-                  (e.g. Typeform, Google Forms, or custom form)
-                </p>
-              </div>
+            <div className="glass-card p-4 md:p-8">
+              {/* 
+                EMBED YOUR FORM HERE:
+                Replace the src URL below with your Typeform, Google Form, or other embed URL.
+                Example Typeform:  https://yourname.typeform.com/to/XXXXXX
+                Example Google Form: https://docs.google.com/forms/d/e/XXXXX/viewform?embedded=true
+              */}
+              <iframe
+                src="about:blank"
+                title="Join Elara Talent Network"
+                className="w-full rounded-xl border-0"
+                style={{ minHeight: "700px" }}
+                allow="camera; microphone; autoplay; encrypted-media"
+                loading="lazy"
+              />
+              <p className="text-muted-foreground text-xs text-center mt-4">
+                Replace the iframe <code>src</code> with your form URL to activate.
+              </p>
             </div>
           </div>
         </section>
