@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import elaraLogo from "@/assets/elara-logo.png";
 
 const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
 
@@ -57,7 +56,7 @@ const Navigation = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={elaraLogo} alt="Elara" className="h-9 md:h-10 w-auto" />
+            <span className="text-3xl md:text-4xl font-bold text-foreground">Elara</span>
           </Link>
 
           {/* Desktop Navigation */}
