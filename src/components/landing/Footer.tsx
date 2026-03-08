@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <Link to="/">
-                <img src={elaraLogo} alt="Elara" className="h-10 w-auto" />
+                <img src={elaraLogo} alt="Elara" className="h-14 w-auto" />
               </Link>
             </div>
             <p className="text-muted-foreground max-w-sm mb-6">
