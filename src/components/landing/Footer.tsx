@@ -31,9 +31,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center mb-4">
+            <div className="flex items-center mb-2">
               <Link to="/">
-                <img src={elaraLogo} alt="Elara" className="h-14 w-auto" />
+                <img src={elaraLogo} alt="Elara" className="h-[72px] w-auto" />
               </Link>
             </div>
             <p className="text-muted-foreground max-w-sm mb-6">
