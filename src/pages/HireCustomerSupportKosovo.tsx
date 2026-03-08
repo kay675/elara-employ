@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navigation from "@/components/landing/Navigation";
 import Footer from "@/components/landing/Footer";
 import CookieConsent from "@/components/CookieConsent";
