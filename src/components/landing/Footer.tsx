@@ -89,6 +89,33 @@ const Footer = () => {
             </ul>
           </div>
 
+          {/* Resources */}
+          <div>
+            <h4 className="font-semibold mb-4">Resources</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/employer-of-record-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
+                  EOR in Kosovo
+                </Link>
+              </li>
+              <li>
+                <Link to="/hire-customer-support-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Hire Customer Support
+                </Link>
+              </li>
+              <li>
+                <Link to="/hire-sales-team-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Hire Sales Teams
+                </Link>
+              </li>
+              <li>
+                <Link to="/kosovo-salary-guide" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Kosovo Salary Guide
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           {/* Legal */}
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
