@@ -39,7 +39,7 @@ const HireEmployeesKosovo = () => {
         <section className="section-padding pt-32 md:pt-40 lg:pt-48">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up">
-              Hire Employees in{" "}
+              How to Hire Employees in{" "}
               <span className="gradient-text">Kosovo</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-4 animate-fade-in-up delay-100">
@@ -142,13 +142,13 @@ const HireEmployeesKosovo = () => {
               <h3 className="font-bold text-lg mb-4">Related Pages</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to="/employer-of-record-kosovo" className="text-primary hover:underline">
-                    Employer of Record in Kosovo →
+                  <Link to="/kosovo-payroll-services" className="text-primary hover:underline">
+                    Payroll Services in Kosovo →
                   </Link>
                 </li>
                 <li>
-                  <Link to="/build-teams-in-kosovo" className="text-primary hover:underline">
-                    Build Teams in Kosovo →
+                  <Link to="/employer-of-record-kosovo" className="text-primary hover:underline">
+                    Employer of Record in Kosovo →
                   </Link>
                 </li>
                 <li>

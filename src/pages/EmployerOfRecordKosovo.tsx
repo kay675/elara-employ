@@ -58,7 +58,7 @@ const faqs = [
 
 const EmployerOfRecordKosovo = () => {
   useEffect(() => {
-    document.title = "Employer of Record in Kosovo | Elara";
+    document.title = "Employer of Record Kosovo | Elara";
   }, []);
 
   return (
@@ -283,18 +283,23 @@ const EmployerOfRecordKosovo = () => {
               <h3 className="font-bold text-lg mb-4">Related Pages</h3>
               <ul className="space-y-3">
                 <li>
-                  <Link to="/hire-customer-support-kosovo" className="text-primary hover:underline">
-                    Hire Customer Support Teams in Kosovo →
+                  <Link to="/hire-employees-kosovo" className="text-primary hover:underline">
+                    Hire Employees in Kosovo →
                   </Link>
                 </li>
                 <li>
-                   <Link to="/hire-sales-teams-kosovo" className="text-primary hover:underline">
-                     Hire Sales Teams in Kosovo →
+                  <Link to="/kosovo-payroll-services" className="text-primary hover:underline">
+                    Payroll Services in Kosovo →
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/kosovo-employment-law" className="text-primary hover:underline">
+                    Kosovo Employment Law →
                   </Link>
                 </li>
                 <li>
                   <Link to="/kosovo-salary-guide" className="text-primary hover:underline">
-                    Kosovo Salary Guide for International Companies →
+                    Kosovo Salary Guide →
                   </Link>
                 </li>
               </ul>

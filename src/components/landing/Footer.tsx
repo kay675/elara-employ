@@ -103,8 +103,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/kosovo-payroll-services" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Payroll Services in Kosovo
+                </Link>
+              </li>
+              <li>
                 <Link to="/kosovo-salary-guide" className="text-muted-foreground hover:text-foreground transition-colors">
                   Kosovo Salary Guide
+                </Link>
+              </li>
+              <li>
+                <Link to="/kosovo-employment-law" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Kosovo Employment Law
                 </Link>
               </li>
             </ul>
