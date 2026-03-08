@@ -36,7 +36,7 @@ const KosovoSalaryGuide = () => {
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up">
               Kosovo Salary Guide for{" "}
-              <span className="gradient-text">International Companies</span>
+              <span className="gradient-text">Employers</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-4 animate-fade-in-up delay-100">
               Companies hiring remote teams often research salary expectations before entering a new market. Kosovo offers competitive salary levels for many operational and service roles compared to Western Europe.
@@ -132,13 +132,13 @@ const KosovoSalaryGuide = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/hire-customer-support-kosovo" className="text-primary hover:underline">
-                    Hire Customer Support Teams in Kosovo →
+                  <Link to="/kosovo-employment-law" className="text-primary hover:underline">
+                    Kosovo Employment Law →
                   </Link>
                 </li>
                 <li>
-                   <Link to="/hire-sales-teams-kosovo" className="text-primary hover:underline">
-                     Hire Sales Teams in Kosovo →
+                  <Link to="/kosovo-payroll-services" className="text-primary hover:underline">
+                    Payroll Services in Kosovo →
                   </Link>
                 </li>
               </ul>
