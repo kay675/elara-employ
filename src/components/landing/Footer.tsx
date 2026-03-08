@@ -99,13 +99,13 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/hire-customer-support-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Hire Customer Support Teams
+                <Link to="/hire-employees-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Hire Employees in Kosovo
                 </Link>
               </li>
               <li>
-                <Link to="/hire-sales-teams-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Hire Sales Teams
+                <Link to="/build-teams-in-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Build Teams in Kosovo
                 </Link>
               </li>
               <li>

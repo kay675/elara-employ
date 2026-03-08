@@ -13,6 +13,8 @@ import EmployerOfRecordKosovo from "./pages/EmployerOfRecordKosovo";
 import HireCustomerSupportKosovo from "./pages/HireCustomerSupportKosovo";
 import HireSalesTeamKosovo from "./pages/HireSalesTeamKosovo";
 import KosovoSalaryGuide from "./pages/KosovoSalaryGuide";
+import HireEmployeesKosovo from "./pages/HireEmployeesKosovo";
+import BuildTeamsInKosovo from "./pages/BuildTeamsInKosovo";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -34,6 +36,8 @@ const App = () => (
           <Route path="/hire-customer-support-kosovo" element={<HireCustomerSupportKosovo />} />
           <Route path="/hire-sales-teams-kosovo" element={<HireSalesTeamKosovo />} />
           <Route path="/kosovo-salary-guide" element={<KosovoSalaryGuide />} />
+          <Route path="/hire-employees-kosovo" element={<HireEmployeesKosovo />} />
+          <Route path="/build-teams-in-kosovo" element={<BuildTeamsInKosovo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
