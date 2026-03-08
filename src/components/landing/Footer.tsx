@@ -73,6 +73,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <Link to="/candidates" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Candidates
+                </Link>
+              </li>
+              <li>
                 <a
                   href="#faq"
                   onClick={(e) => handleAnchorClick(e, "#faq")}
