@@ -24,7 +24,7 @@ const competitiveReasons = [
 
 const KosovoSalaryGuide = () => {
   useEffect(() => {
-    document.title = "Kosovo Salary Guide for Remote Teams | Elara";
+    document.title = "Kosovo Salary Guide | Elara";
   }, []);
 
   return (
