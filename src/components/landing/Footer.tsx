@@ -1,6 +1,7 @@
 import { Mail } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useCallback } from "react";
+import elaraLogo from "@/assets/elara-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,7 +33,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <Link to="/">
-                <span className="text-3xl md:text-4xl font-bold text-foreground">Elara</span>
+                <img src={elaraLogo} alt="Elara" className="h-10 w-auto" />
               </Link>
             </div>
             <p className="text-muted-foreground max-w-sm mb-6">
