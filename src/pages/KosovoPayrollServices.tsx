@@ -10,7 +10,7 @@ const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
 
 const services = [
   { icon: DollarSign, title: "Salary processing", description: "Monthly payroll calculated and paid on time in local currency." },
-  { icon: FileText, title: "Tax filings", description: "Income tax and social contribution declarations handled on your behalf." },
+  { icon: FileText, title: "Tax filings", description: "Income tax and social security contribution filings handled on your behalf." },
   { icon: Shield, title: "Compliance management", description: "Payroll aligned with Kosovo labour regulations and reporting requirements." },
   { icon: Calculator, title: "Payslip generation", description: "Professional payslips issued to each employee every month." },
 ];
