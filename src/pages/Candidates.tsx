@@ -59,11 +59,15 @@ const Candidates = () => {
               Join Elara's candidate network and get matched with international businesses looking to hire top talent through our Employer of Record model.
             </p>
             <div className="animate-fade-in-up delay-200">
-              <Button asChild size="lg" className="btn-primary-glow border-0 text-lg h-14">
-                <a href="#join">
+              <Button
+                size="lg"
+                className="btn-primary-glow border-0 text-lg h-14 cursor-pointer"
+                onClick={() => {
+                  document.getElementById("join")?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                   Join the Talent Pool
                   <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
               </Button>
             </div>
             <p className="text-sm text-muted-foreground mt-6 animate-fade-in-up delay-300">
