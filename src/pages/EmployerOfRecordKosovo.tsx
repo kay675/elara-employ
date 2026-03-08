@@ -58,7 +58,7 @@ const faqs = [
 
 const EmployerOfRecordKosovo = () => {
   useEffect(() => {
-    document.title = "Employer of Record in Kosovo | Hire Employees in Kosovo | Elara";
+    document.title = "Employer of Record in Kosovo | Elara";
   }, []);
 
   return (
@@ -288,8 +288,8 @@ const EmployerOfRecordKosovo = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/hire-sales-team-kosovo" className="text-primary hover:underline">
-                    Hire Remote Sales Teams in Kosovo →
+                   <Link to="/hire-sales-teams-kosovo" className="text-primary hover:underline">
+                     Hire Sales Teams in Kosovo →
                   </Link>
                 </li>
                 <li>
