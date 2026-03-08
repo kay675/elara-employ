@@ -15,6 +15,7 @@ import HireSalesTeamKosovo from "./pages/HireSalesTeamKosovo";
 import KosovoSalaryGuide from "./pages/KosovoSalaryGuide";
 import HireEmployeesKosovo from "./pages/HireEmployeesKosovo";
 import BuildTeamsInKosovo from "./pages/BuildTeamsInKosovo";
+import BannerGenerator from "./pages/BannerGenerator";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
