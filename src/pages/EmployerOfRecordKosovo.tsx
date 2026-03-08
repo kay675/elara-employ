@@ -57,6 +57,10 @@ const faqs = [
 ];
 
 const EmployerOfRecordKosovo = () => {
+  useEffect(() => {
+    document.title = "Employer of Record in Kosovo | Hire Employees in Kosovo | Elara";
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navigation />

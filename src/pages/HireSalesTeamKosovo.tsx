@@ -24,6 +24,10 @@ const reasons = [
 ];
 
 const HireSalesTeamKosovo = () => {
+  useEffect(() => {
+    document.title = "Hire Remote Sales Teams in Kosovo | Elara";
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navigation />

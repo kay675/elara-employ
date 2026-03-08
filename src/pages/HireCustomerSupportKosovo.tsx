@@ -24,6 +24,10 @@ const reasons = [
 ];
 
 const HireCustomerSupportKosovo = () => {
+  useEffect(() => {
+    document.title = "Hire Customer Support Teams in Kosovo | Elara";
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navigation />
