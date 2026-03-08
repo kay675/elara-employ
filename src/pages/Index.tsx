@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navigation from "@/components/landing/Navigation";
 import Hero from "@/components/landing/Hero";
 import Results from "@/components/landing/Results";
@@ -12,6 +14,24 @@ import Footer from "@/components/landing/Footer";
 import CookieConsent from "@/components/CookieConsent";
 
 const Index = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollTo = params.get("scrollTo");
+    if (scrollTo) {
+      // Small delay to ensure DOM is ready
+      setTimeout(() => {
+        const el = document.getElementById(scrollTo);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+        // Clean up URL
+        window.history.replaceState({}, "", "/");
+      }, 100);
+    }
+  }, [location.search]);
+
   return (
     <div className="min-h-screen">
       <Navigation />

@@ -1,23 +1,44 @@
 import { Mail } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useCallback } from "react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleAnchorClick = useCallback(
+    (e: React.MouseEvent, href: string) => {
+      e.preventDefault();
+      const sectionId = href.replace("#", "");
+
+      if (location.pathname === "/") {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        navigate("/?scrollTo=" + sectionId);
+      }
+    },
+    [location.pathname, navigate]
+  );
 
   return (
-    <footer className="border-t border-border">
+    <footer className="border-t border-border relative z-[50]">
       <div className="mx-auto max-w-7xl px-4 md:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
-              <span className="text-3xl md:text-4xl font-bold text-foreground">Elara</span>
+              <Link to="/">
+                <span className="text-3xl md:text-4xl font-bold text-foreground">Elara</span>
+              </Link>
             </div>
             <p className="text-muted-foreground max-w-sm mb-6">
               Kosovo's Employer of Record. Helping UK & EU companies build 
               compliant, full-time teams in Kosovo — fast.
             </p>
-            {/* Social links */}
             <div className="flex gap-4">
               <a
                 href="mailto:aaron@elara-ero.com"
@@ -34,17 +55,29 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="#how-it-works"
+                  onClick={(e) => handleAnchorClick(e, "#how-it-works")}
+                  className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                >
                   How It Works
                 </a>
               </li>
               <li>
-                <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="#pricing"
+                  onClick={(e) => handleAnchorClick(e, "#pricing")}
+                  className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                >
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">
+                <a
+                  href="#faq"
+                  onClick={(e) => handleAnchorClick(e, "#faq")}
+                  className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                >
                   FAQ
                 </a>
               </li>
