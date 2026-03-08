@@ -181,7 +181,7 @@ const Candidates = () => {
                 Submit your details and we'll be in touch when a matching opportunity arises.
               </p>
             </div>
-            <div className="glass-card p-4 md:p-8 overflow-visible">
+            <div className="glass-card p-4 md:p-8 overflow-visible relative z-[1]">
               {/* 
                 EMBED YOUR FORM HERE:
                 Replace the src URL below with your Typeform, Google Form, or other embed URL.
