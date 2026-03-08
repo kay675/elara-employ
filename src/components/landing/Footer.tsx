@@ -31,15 +31,15 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center mb-2">
-              <Link to="/">
+            <div className="flex items-start gap-4 mb-6">
+              <Link to="/" className="shrink-0">
                 <img src={elaraLogo} alt="Elara" className="h-[72px] w-auto" />
               </Link>
+              <p className="text-muted-foreground max-w-sm pt-2">
+                Kosovo's Employer of Record. Helping UK & EU companies build 
+                compliant, full-time teams in Kosovo — fast.
+              </p>
             </div>
-            <p className="text-muted-foreground max-w-sm mb-6">
-              Kosovo's Employer of Record. Helping UK & EU companies build 
-              compliant, full-time teams in Kosovo — fast.
-            </p>
             <div className="flex gap-4">
               <a
                 href="mailto:aaron@elara-ero.com"
