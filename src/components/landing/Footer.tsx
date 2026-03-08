@@ -89,22 +89,22 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Hiring in Kosovo */}
           <div>
-            <h4 className="font-semibold mb-4">Resources</h4>
+            <h4 className="font-semibold mb-4">Hiring in Kosovo</h4>
             <ul className="space-y-3">
               <li>
                 <Link to="/employer-of-record-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
-                  EOR in Kosovo
+                  Employer of Record in Kosovo
                 </Link>
               </li>
               <li>
                 <Link to="/hire-customer-support-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Hire Customer Support
+                  Hire Customer Support Teams
                 </Link>
               </li>
               <li>
-                <Link to="/hire-sales-team-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/hire-sales-teams-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
                   Hire Sales Teams
                 </Link>
               </li>

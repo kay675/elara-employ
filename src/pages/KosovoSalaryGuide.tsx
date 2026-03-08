@@ -137,8 +137,8 @@ const KosovoSalaryGuide = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/hire-sales-team-kosovo" className="text-primary hover:underline">
-                    Hire Remote Sales Teams in Kosovo →
+                   <Link to="/hire-sales-teams-kosovo" className="text-primary hover:underline">
+                     Hire Sales Teams in Kosovo →
                   </Link>
                 </li>
               </ul>

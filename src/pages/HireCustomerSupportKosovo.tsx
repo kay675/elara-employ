@@ -14,6 +14,9 @@ const roles = [
   { icon: Globe, title: "Multilingual support teams" },
   { icon: HelpCircle, title: "Helpdesk staff" },
   { icon: UserCheck, title: "Customer success representatives" },
+  { icon: TrendingUp, title: "Sales development representatives" },
+  { icon: Clock, title: "Operations teams" },
+  { icon: DollarSign, title: "Finance and accounting staff" },
 ];
 
 const reasons = [
@@ -43,8 +46,8 @@ const HireCustomerSupportKosovo = () => {
               Kosovo has become a popular destination for companies building customer support teams. Many businesses hire remote support agents in Kosovo to deliver high-quality service while maintaining competitive operating costs.
             </p>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-in-up delay-200">
-              The country offers a young workforce with strong English language skills and growing experience supporting international companies.
-            </p>
+               The country offers a young workforce with strong English language skills and growing experience supporting international companies. Through Elara's Employer of Record service, companies can also hire across many other departments including sales, operations, finance and marketing.
+             </p>
           </div>
         </section>
 
@@ -141,8 +144,8 @@ const HireCustomerSupportKosovo = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/hire-sales-team-kosovo" className="text-primary hover:underline">
-                    Hire Remote Sales Teams in Kosovo →
+                   <Link to="/hire-sales-teams-kosovo" className="text-primary hover:underline">
+                     Hire Sales Teams in Kosovo →
                   </Link>
                 </li>
                 <li>

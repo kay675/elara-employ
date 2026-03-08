@@ -3,7 +3,7 @@ import Navigation from "@/components/landing/Navigation";
 import Footer from "@/components/landing/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, TrendingUp, Target, Phone, Users, UserCheck, MessageSquare, DollarSign, Clock, Briefcase } from "lucide-react";
+import { ArrowRight, TrendingUp, Target, Phone, Users, UserCheck, MessageSquare, DollarSign, Clock, Briefcase, HeadphonesIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
@@ -14,6 +14,9 @@ const roles = [
   { icon: Phone, title: "Outbound sales agents" },
   { icon: Users, title: "Inside sales teams" },
   { icon: UserCheck, title: "Account management support" },
+  { icon: HeadphonesIcon, title: "Customer support teams" },
+  { icon: Briefcase, title: "Administrative staff" },
+  { icon: Clock, title: "Operations teams" },
 ];
 
 const reasons = [
@@ -25,7 +28,7 @@ const reasons = [
 
 const HireSalesTeamKosovo = () => {
   useEffect(() => {
-    document.title = "Hire Remote Sales Teams in Kosovo | Elara";
+    document.title = "Hire Sales Teams in Kosovo | Elara";
   }, []);
 
   return (
@@ -35,16 +38,16 @@ const HireSalesTeamKosovo = () => {
         {/* Hero */}
         <section className="section-padding pt-32 md:pt-40 lg:pt-48">
           <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up">
-              Build Remote Sales Teams in{" "}
+             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up">
+               Hire Sales Teams in{" "}
               <span className="gradient-text">Kosovo</span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-4 animate-fade-in-up delay-100">
-              Many companies build outbound sales and lead generation teams in Kosovo to support growth in international markets.
-            </p>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-in-up delay-200">
-              Sales development representatives (SDRs) and inside sales teams based in Kosovo can support companies across Europe and the UK.
-            </p>
+             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-4 animate-fade-in-up delay-100">
+               Many international companies build sales teams in Kosovo to support their global growth. Through Elara's Employer of Record service, businesses can hire full-time sales staff in Kosovo without opening a local company.
+             </p>
+             <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-in-up delay-200">
+               Companies hiring through Elara commonly recruit roles across sales, customer support, operations, finance, marketing and more.
+             </p>
           </div>
         </section>
 
