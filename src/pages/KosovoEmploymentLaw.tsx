@@ -17,7 +17,7 @@ const keyAreas = [
 
 const compliancePoints = [
   "Employment contracts must be in writing and registered",
-  "Minimum wage regulations apply across all sectors",
+  "Statutory minimum wage provisions exist under Kosovo labour law.",
   "Employers must provide paid annual leave and public holidays",
   "Social security contributions are mandatory for all employees",
   "Anti-discrimination protections are enshrined in law",
