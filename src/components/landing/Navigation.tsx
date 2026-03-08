@@ -57,7 +57,7 @@ const Navigation = () => {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src={elaraLogo} alt="Elara" className="h-16 w-auto" />
+            <img src={elaraLogo} alt="Elara" className="h-24 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
