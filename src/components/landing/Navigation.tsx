@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import elaraLogo from "@/assets/elara-logo-tight.png";
+import elaraLogo from "@/assets/elara-logo-original.png";
 
 const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
 
