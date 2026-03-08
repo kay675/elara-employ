@@ -105,11 +105,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/build-teams-in-kosovo" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Build Teams in Kosovo
-                </Link>
-              </li>
-              <li>
                 <Link to="/kosovo-salary-guide" className="text-muted-foreground hover:text-foreground transition-colors">
                   Kosovo Salary Guide
                 </Link>
