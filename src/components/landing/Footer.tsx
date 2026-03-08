@@ -36,7 +36,6 @@ const Footer = () => {
                 <img src={elaraLogo} alt="Elara" className="h-10 w-auto" />
               </Link>
             </div>
-            </div>
             <p className="text-muted-foreground max-w-sm mb-6">
               Kosovo's Employer of Record. Helping UK & EU companies build 
               compliant, full-time teams in Kosovo — fast.

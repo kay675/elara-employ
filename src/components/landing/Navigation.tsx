@@ -59,7 +59,6 @@ const Navigation = () => {
           <Link to="/" className="flex items-center">
             <img src={elaraLogo} alt="Elara" className="h-9 md:h-10 w-auto" />
           </Link>
-          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
