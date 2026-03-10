@@ -260,7 +260,7 @@ const SalaryCalculator = () => {
                     <AnimatedValue value={results.countryTeamCost} symbol={selectedCountry.symbol} />
                   </p>
                   <p className="text-[11px] text-muted-foreground/60">per year</p>
-                  <p className="text-[11px] text-muted-foreground/50">Employer cost: {Math.round(results.countryOnCost * 100)}%</p>
+                  <p className="text-[11px] text-muted-foreground/50">Including employer costs: {Math.round(results.countryOnCost * 100)}%</p>
                 </div>
                 <div className="rounded-xl bg-secondary/30 p-4 space-y-1">
                   <p className="text-xs text-muted-foreground">🇽🇰 Kosovo</p>
