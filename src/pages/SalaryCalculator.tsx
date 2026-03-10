@@ -90,17 +90,21 @@ const SalaryCalculator = () => {
     return { countryTeamCost, kosovoTeamCost, annualSaving, fiveYearSaving };
   }, [role, country, teamSize]);
 
-  return (
-    <>
-      <Helmet>
-        <title>Kosovo Hiring Cost Calculator | Compare Hiring Costs Across Europe | Elara EOR</title>
-        <meta
-          name="description"
-          content="Estimate how much your company could save by hiring talent in Kosovo. Compare salary and employer costs across the UK, Germany, France, Spain and Italy."
-        />
-        <link rel="canonical" href="https://www.elara-eor.com/salary-calculator" />
-      </Helmet>
+  useEffect(() => {
+    document.title = "Kosovo Hiring Cost Calculator | Compare Hiring Costs Across Europe | Elara EOR";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) meta.setAttribute("content", "Estimate how much your company could save by hiring talent in Kosovo. Compare salary and employer costs across the UK, Germany, France, Spain and Italy.");
+    
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      document.head.appendChild(canonical);
+    }
+    canonical.href = "https://www.elara-eor.com/salary-calculator";
+  }, []);
 
+  return (
       <div className="min-h-screen bg-background">
         <Navigation />
 
