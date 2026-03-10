@@ -290,6 +290,13 @@ const SalaryCalculator = () => {
                 <p className="text-[11px] text-muted-foreground mt-1">Based on current team size</p>
               </div>
 
+              {/* Cost Reduction % */}
+              <div className="rounded-xl bg-secondary/30 p-5 text-center">
+                <p className="text-xs text-muted-foreground mb-1">Estimated Cost Reduction</p>
+                <p className="text-3xl font-bold text-foreground">{results.costReductionPct}%</p>
+                <p className="text-[11px] text-muted-foreground mt-1">lower cost compared to {selectedCountry.label}</p>
+              </div>
+
               {/* Inline CTA */}
               <div className="pt-1">
                 <Button asChild size="lg" className="btn-primary-glow border-0 w-full text-base py-6">
