@@ -246,47 +246,49 @@ const SalaryCalculator = () => {
             </div>
 
             {/* Right: Results */}
-            <div className="glass-card p-8 md:p-10 space-y-6">
+            <div className="glass-card p-8 md:p-10 space-y-5">
               <h2 className="text-xl font-bold">Your Estimated Savings</h2>
 
-              {/* Country cost */}
-              <div className="rounded-xl bg-secondary/40 p-5 space-y-1">
-                <p className="text-sm text-muted-foreground">
-                  {selectedCountry.flag} Your team in {selectedCountry.label}
-                </p>
-                <p className="text-2xl font-bold">
-                  <AnimatedValue value={results.countryTeamCost} symbol={selectedCountry.symbol} />
-                  <span className="text-sm font-normal text-muted-foreground ml-2">/ year</span>
-                </p>
+              {/* Country & Kosovo costs – subdued */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="rounded-xl bg-secondary/30 p-4 space-y-1">
+                  <p className="text-xs text-muted-foreground">
+                    {selectedCountry.flag} {selectedCountry.label}
+                  </p>
+                  <p className="text-lg font-semibold text-muted-foreground/80">
+                    <AnimatedValue value={results.countryTeamCost} symbol={selectedCountry.symbol} />
+                  </p>
+                  <p className="text-[11px] text-muted-foreground/60">per year</p>
+                </div>
+                <div className="rounded-xl bg-secondary/30 p-4 space-y-1">
+                  <p className="text-xs text-muted-foreground">🇽🇰 Kosovo</p>
+                  <p className="text-lg font-semibold text-muted-foreground/80">
+                    <AnimatedValue value={results.kosovoTeamCost} symbol={selectedCountry.symbol} />
+                  </p>
+                  <p className="text-[11px] text-muted-foreground/60">per year</p>
+                </div>
               </div>
 
-              {/* Kosovo cost */}
-              <div className="rounded-xl bg-secondary/40 p-5 space-y-1">
-                <p className="text-sm text-muted-foreground">🇽🇰 Same team in Kosovo</p>
-                <p className="text-2xl font-bold text-primary">
-                  <AnimatedValue value={results.kosovoTeamCost} symbol={selectedCountry.symbol} />
-                  <span className="text-sm font-normal text-muted-foreground ml-2">/ year</span>
-                </p>
-              </div>
-
-              {/* Annual Saving – Hero figure */}
-              <div className="rounded-xl border border-primary/30 bg-primary/10 p-6 space-y-1 glow-purple">
-                <p className="text-sm text-muted-foreground">Estimated Annual Saving</p>
-                <p className="text-4xl md:text-5xl font-bold text-primary">
+              {/* Annual Saving – HERO figure */}
+              <div className="rounded-2xl border border-primary/30 bg-primary/[0.08] p-7 md:p-8 text-center glow-purple">
+                <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">You Save</p>
+                <p className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-foreground leading-none">
                   <AnimatedValue value={results.annualSaving} symbol={selectedCountry.symbol} />
                 </p>
+                <p className="text-sm text-muted-foreground mt-3">per year by hiring in Kosovo through Elara</p>
               </div>
 
               {/* 5-Year Saving */}
-              <div className="rounded-xl border border-primary/20 bg-primary/5 p-5 space-y-1">
-                <p className="text-sm text-muted-foreground">Estimated 5-Year Saving</p>
-                <p className="text-3xl font-bold text-primary">
+              <div className="rounded-xl border border-primary/15 bg-primary/[0.04] p-5 text-center">
+                <p className="text-xs text-muted-foreground mb-1">Estimated 5-Year Saving</p>
+                <p className="text-3xl md:text-4xl font-bold text-foreground">
                   <AnimatedValue value={results.fiveYearSaving} symbol={selectedCountry.symbol} />
                 </p>
+                <p className="text-[11px] text-muted-foreground mt-1">Based on current team size</p>
               </div>
 
               {/* Inline CTA */}
-              <div className="pt-2">
+              <div className="pt-1">
                 <Button asChild size="lg" className="btn-primary-glow border-0 w-full text-base py-6">
                   <a href={CTA_LINK} target="_blank" rel="noopener noreferrer">
                     Book a 30-minute hiring plan
