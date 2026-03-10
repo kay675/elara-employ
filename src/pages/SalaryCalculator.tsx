@@ -350,7 +350,7 @@ const SalaryCalculator = () => {
             </div>
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Get a tailored <span className="gradient-text">hiring plan</span> for your team
+                Get a tailored hiring plan for your <span className="gradient-text">team</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
                 These figures are illustrative estimates. Elara can provide a more precise breakdown based
