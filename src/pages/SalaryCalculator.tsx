@@ -253,22 +253,22 @@ const SalaryCalculator = () => {
               {/* Country & Kosovo costs – subdued */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-xl bg-secondary/30 p-4 space-y-1">
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xs text-foreground">
                     {selectedCountry.flag} {selectedCountry.label}
                   </p>
-                  <p className="text-lg font-semibold text-muted-foreground/80">
+                  <p className="text-lg font-semibold text-foreground">
                     <AnimatedValue value={results.countryTeamCost} symbol={selectedCountry.symbol} />
                   </p>
-                  <p className="text-[11px] text-muted-foreground/60">per year</p>
-                  <p className="text-[11px] text-muted-foreground/50">Including employer costs: {Math.round(results.countryOnCost * 100)}%</p>
+                  <p className="text-[11px] text-muted-foreground">per year</p>
+                  <p className="text-[11px] text-muted-foreground">Including employer costs: {Math.round(results.countryOnCost * 100)}%</p>
                 </div>
                 <div className="rounded-xl bg-secondary/30 p-4 space-y-1">
-                  <p className="text-xs text-muted-foreground">🇽🇰 Kosovo</p>
-                  <p className="text-lg font-semibold text-muted-foreground/80">
+                  <p className="text-xs text-foreground">🇽🇰 Kosovo</p>
+                  <p className="text-lg font-semibold text-foreground">
                     <AnimatedValue value={results.kosovoTeamCost} symbol={selectedCountry.symbol} />
                   </p>
-                  <p className="text-[11px] text-muted-foreground/60">per year</p>
-                  <p className="text-[11px] text-muted-foreground/50">Including employer costs: {Math.round(results.kosovoOnCost * 100)}%</p>
+                  <p className="text-[11px] text-muted-foreground">per year</p>
+                  <p className="text-[11px] text-muted-foreground">Including employer costs: {Math.round(results.kosovoOnCost * 100)}%</p>
                 </div>
               </div>
 
