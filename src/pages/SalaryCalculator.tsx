@@ -290,7 +290,6 @@ const SalaryCalculator = () => {
         <Footer />
         <CookieConsent />
       </div>
-    </>
   );
 };
 
