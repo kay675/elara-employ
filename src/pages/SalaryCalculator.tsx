@@ -1,5 +1,4 @@
-import { useState, useMemo } from "react";
-import { Helmet } from "react-helmet-async";
+import { useState, useMemo, useEffect } from "react";
 import Navigation from "@/components/landing/Navigation";
 import Footer from "@/components/landing/Footer";
 import CookieConsent from "@/components/CookieConsent";
