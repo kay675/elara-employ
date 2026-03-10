@@ -18,6 +18,7 @@ import BuildTeamsInKosovo from "./pages/BuildTeamsInKosovo";
 import BannerGenerator from "./pages/BannerGenerator";
 import KosovoPayrollServices from "./pages/KosovoPayrollServices";
 import KosovoEmploymentLaw from "./pages/KosovoEmploymentLaw";
+import SalaryCalculator from "./pages/SalaryCalculator";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
