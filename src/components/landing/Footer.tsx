@@ -63,6 +63,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <Link to="/salary-calculator" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Savings Calculator
+                </Link>
+              </li>
+              <li>
                 <a
                   href="#pricing"
                   onClick={(e) => handleAnchorClick(e, "#pricing")}

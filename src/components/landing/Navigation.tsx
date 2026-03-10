@@ -40,6 +40,7 @@ const Navigation = () => {
 
   const navLinks = [
     { label: "How It Works", href: "#how-it-works" },
+    { label: "Savings Calculator", href: "/salary-calculator" },
     { label: "Pricing", href: "#pricing" },
     { label: "Candidates", href: "/candidates" },
     { label: "FAQ", href: "#faq" },
