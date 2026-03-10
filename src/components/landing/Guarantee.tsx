@@ -1,7 +1,6 @@
 import { Shield, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+import { CTA_LINK, openBooking } from "@/lib/booking";
 
 const Guarantee = () => {
   return (
@@ -49,7 +48,7 @@ const Guarantee = () => {
 
             {/* CTA */}
             <Button asChild size="lg" className="btn-primary-glow border-0 text-lg h-14">
-              <a href={CTA_LINK} target="_blank" rel="noopener noreferrer">
+              <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" onClick={openBooking}>
                 Start Risk-Free Today
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
