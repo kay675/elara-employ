@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import elaraLogo from "@/assets/elara-logo-original.png";
-
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+import { CTA_LINK, openBooking } from "@/lib/booking";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -88,7 +87,7 @@ const Navigation = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button asChild className="btn-primary-glow border-0">
-              <a href={CTA_LINK} target="_blank" rel="noopener noreferrer">
+              <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" onClick={openBooking}>
                 Book 30 min Hiring Plan
               </a>
             </Button>
@@ -129,7 +128,7 @@ const Navigation = () => {
                 )
               )}
               <Button asChild className="btn-primary-glow border-0 w-full mt-2">
-                <a href={CTA_LINK} target="_blank" rel="noopener noreferrer">
+                <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" onClick={openBooking}>
                   Book 30 min Hiring Plan
                 </a>
               </Button>

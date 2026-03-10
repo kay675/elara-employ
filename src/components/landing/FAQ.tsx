@@ -6,8 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+import { CTA_LINK, openBooking } from "@/lib/booking";
 
 const faqs = [
   {
@@ -76,7 +75,7 @@ const FAQ = () => {
             Still have questions? Let's talk.
           </p>
           <Button asChild size="lg" className="btn-primary-glow border-0 text-lg h-14">
-            <a href={CTA_LINK} target="_blank" rel="noopener noreferrer">
+            <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" onClick={openBooking}>
               Book 30 min Hiring Plan
               <ArrowRight className="ml-2 w-5 h-5" />
             </a>

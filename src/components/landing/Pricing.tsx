@@ -1,7 +1,6 @@
 import { Check, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+import { CTA_LINK, openBooking } from "@/lib/booking";
 
 const plans = [
   {
@@ -74,9 +73,13 @@ const Pricing = () => {
               {/* Plan details */}
               <div className="text-center mb-8">
                 <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{plan.description}</p>
+                <p className="text-muted-foreground text-sm mb-4">
+                  {plan.description}
+                </p>
                 <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl font-bold gradient-text">{plan.price}</span>
+                  <span className="text-4xl font-bold gradient-text">
+                    {plan.price}
+                  </span>
                   <span className="text-muted-foreground">{plan.period}</span>
                 </div>
               </div>
@@ -88,7 +91,9 @@ const Pricing = () => {
                     <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                       <Check className="w-3 h-3 text-primary" />
                     </div>
-                    <span className="text-sm text-muted-foreground">{feature}</span>
+                    <span className="text-sm text-muted-foreground">
+                      {feature}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -102,7 +107,7 @@ const Pricing = () => {
                     : "btn-secondary-glass border"
                 }`}
               >
-                <a href={CTA_LINK} target="_blank" rel="noopener noreferrer">
+                <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" onClick={openBooking}>
                   Get Started
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
