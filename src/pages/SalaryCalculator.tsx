@@ -125,7 +125,7 @@ const SalaryCalculator = () => {
       canonical.rel = "canonical";
       document.head.appendChild(canonical);
     }
-    canonical.href = "https://www.elara-eor.com/salary-calculator";
+    canonical.href = "https://www.elara-eor.com/savings-calculator";
   }, []);
 
   return (
