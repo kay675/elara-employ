@@ -109,8 +109,9 @@ const SalaryCalculator = () => {
     const kosovoTeamCost = kosovoCostPerEmployee * teamSize;
     const annualSaving = countryTeamCost - kosovoTeamCost;
     const fiveYearSaving = annualSaving * 5;
+    const costReductionPct = countryTeamCost > 0 ? Math.round((annualSaving / countryTeamCost) * 100) : 0;
 
-    return { countryTeamCost, kosovoTeamCost, annualSaving, fiveYearSaving };
+    return { countryTeamCost, kosovoTeamCost, annualSaving, fiveYearSaving, countryOnCost, kosovoOnCost, costReductionPct };
   }, [role, country, teamSize]);
 
   useEffect(() => {
