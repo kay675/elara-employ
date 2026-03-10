@@ -109,8 +109,9 @@ const SalaryCalculator = () => {
     const kosovoTeamCost = kosovoCostPerEmployee * teamSize;
     const annualSaving = countryTeamCost - kosovoTeamCost;
     const fiveYearSaving = annualSaving * 5;
+    const costReductionPct = countryTeamCost > 0 ? Math.round((annualSaving / countryTeamCost) * 100) : 0;
 
-    return { countryTeamCost, kosovoTeamCost, annualSaving, fiveYearSaving };
+    return { countryTeamCost, kosovoTeamCost, annualSaving, fiveYearSaving, countryOnCost, kosovoOnCost, costReductionPct };
   }, [role, country, teamSize]);
 
   useEffect(() => {
@@ -259,6 +260,7 @@ const SalaryCalculator = () => {
                     <AnimatedValue value={results.countryTeamCost} symbol={selectedCountry.symbol} />
                   </p>
                   <p className="text-[11px] text-muted-foreground/60">per year</p>
+                  <p className="text-[11px] text-muted-foreground/50">Employer cost: {Math.round(results.countryOnCost * 100)}%</p>
                 </div>
                 <div className="rounded-xl bg-secondary/30 p-4 space-y-1">
                   <p className="text-xs text-muted-foreground">🇽🇰 Kosovo</p>
@@ -266,6 +268,7 @@ const SalaryCalculator = () => {
                     <AnimatedValue value={results.kosovoTeamCost} symbol={selectedCountry.symbol} />
                   </p>
                   <p className="text-[11px] text-muted-foreground/60">per year</p>
+                  <p className="text-[11px] text-muted-foreground/50">Employer cost: {Math.round(results.kosovoOnCost * 100)}%</p>
                 </div>
               </div>
 
@@ -285,6 +288,13 @@ const SalaryCalculator = () => {
                   <AnimatedValue value={results.fiveYearSaving} symbol={selectedCountry.symbol} />
                 </p>
                 <p className="text-[11px] text-muted-foreground mt-1">Based on current team size</p>
+              </div>
+
+              {/* Cost Reduction % */}
+              <div className="rounded-xl bg-secondary/30 p-5 text-center">
+                <p className="text-xs text-muted-foreground mb-1">Estimated Cost Reduction</p>
+                <p className="text-3xl font-bold text-foreground">{results.costReductionPct}%</p>
+                <p className="text-[11px] text-muted-foreground mt-1">lower cost compared to {selectedCountry.label}</p>
               </div>
 
               {/* Inline CTA */}
