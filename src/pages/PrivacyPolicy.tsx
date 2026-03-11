@@ -380,44 +380,6 @@ const PrivacyPolicy = () => {
             </section>
           </div>
 
-          {/* Cookie Policy */}
-          <div className="border-t border-border my-12 pt-12">
-            <h1 className="text-3xl md:text-4xl font-bold mb-8">Cookie Policy</h1>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">What Are Cookies?</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Cookies are small text files placed on your device when you visit a website. They help the site function properly and provide insights into how it is used.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Cookies We Use</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                We use the following categories of cookies:
-              </p>
-              <ul className="list-disc list-inside text-muted-foreground mt-4 space-y-2">
-                <li><strong>Strictly Necessary Cookies:</strong> Required for the website to function and cannot be switched off.</li>
-                <li><strong>Analytics Cookies:</strong> Help us understand how visitors use our website so we can improve performance.</li>
-                <li><strong>Functional Cookies:</strong> Enable enhanced functionality and personalisation.</li>
-                <li><strong>Marketing Cookies:</strong> Used to deliver relevant content and measure campaign effectiveness.</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Managing Cookies</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                You can manage or withdraw consent at any time through your browser settings or our cookie preferences tool.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Updates</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                We may update this Cookie Policy from time to time to reflect changes in law or technology.
-              </p>
-            </section>
-          </div>
         </article>
       </main>
 

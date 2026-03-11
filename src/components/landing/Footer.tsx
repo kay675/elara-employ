@@ -140,6 +140,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/cookie-policy" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Cookie Policy
+                </Link>
+              </li>
+              <li>
                 <a href="mailto:aaron@elara-ero.com" className="text-muted-foreground hover:text-foreground transition-colors">
                   Contact Us
                 </a>

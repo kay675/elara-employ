@@ -47,6 +47,7 @@ const App = () => (
           <Route path="/kosovo-employment-law" element={<KosovoEmploymentLaw />} />
           <Route path="/savings-calculator" element={<SalaryCalculator />} />
           <Route path="/salary-calculator" element={<Navigate to="/savings-calculator" replace />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/banner-generator" element={<BannerGenerator />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
