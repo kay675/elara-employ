@@ -178,7 +178,8 @@ const PrivacyPolicy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">12. Cookies</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We use cookies and similar technologies on our website. Further information is available in our Cookie Policy below.
+              We use cookies and similar technologies on our website. Further information is available in our{" "}
+              <Link to="/cookie-policy" className="text-primary hover:underline">Cookie Policy</Link>.
             </p>
           </section>
 
