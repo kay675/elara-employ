@@ -10,7 +10,7 @@ const ScrollToTop = () => {
     // Update canonical URL per route
     const canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
-      const url = pathname === "/" ? "https://www.elara-eor.com/" : `https://www.elara-eor.com${pathname}`;
+      const url = pathname === "/" ? "https://elara-eor.com/" : `https://elara-eor.com${pathname}`;
       canonical.setAttribute("href", url);
     }
   }, [pathname]);
