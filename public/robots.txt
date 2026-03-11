@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.elara-eor.com/sitemap.xml
+Sitemap: https://elara-eor.com/sitemap.xml
