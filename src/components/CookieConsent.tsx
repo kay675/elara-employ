@@ -61,7 +61,7 @@ const CookieConsent = () => {
           >
             Reject non-essential
           </Button>
-          <Link to="/privacy-policy" className="inline-flex items-center justify-center">
+          <Link to="/cookie-policy" className="inline-flex items-center justify-center">
             <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
               Manage preferences
             </Button>

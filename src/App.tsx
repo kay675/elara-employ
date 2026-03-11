@@ -19,6 +19,7 @@ import BannerGenerator from "./pages/BannerGenerator";
 import KosovoPayrollServices from "./pages/KosovoPayrollServices";
 import KosovoEmploymentLaw from "./pages/KosovoEmploymentLaw";
 import SalaryCalculator from "./pages/SalaryCalculator";
+import CookiePolicy from "./pages/CookiePolicy";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/kosovo-employment-law" element={<KosovoEmploymentLaw />} />
           <Route path="/savings-calculator" element={<SalaryCalculator />} />
           <Route path="/salary-calculator" element={<Navigate to="/savings-calculator" replace />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/banner-generator" element={<BannerGenerator />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
