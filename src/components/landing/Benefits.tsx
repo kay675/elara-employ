@@ -59,7 +59,7 @@ const Benefits = () => {
 
           <div className="glass-card p-8 flex flex-col justify-center">
             <div className="text-center">
-              <p className="text-6xl font-bold gradient-text mb-4">£500</p>
+              <p className="text-6xl font-bold gradient-text mb-4">~£500</p>
               <p className="text-xl text-foreground mb-2">Per employee, per month</p>
               <p className="text-muted-foreground">
                 Instead of £3–4k in the UK while we handle payroll, tax, and compliance end-to-end
