@@ -19,6 +19,7 @@ import BannerGenerator from "./pages/BannerGenerator";
 import KosovoPayrollServices from "./pages/KosovoPayrollServices";
 import KosovoEmploymentLaw from "./pages/KosovoEmploymentLaw";
 import SalaryCalculator from "./pages/SalaryCalculator";
+import CookiePolicy from "./pages/CookiePolicy";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
