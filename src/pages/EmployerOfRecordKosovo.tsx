@@ -12,7 +12,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
 
 const whyKosovo = [
   { icon: MessageSquare, text: "Strong English-speaking workforce" },

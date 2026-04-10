@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Target, Phone, Users, UserCheck, MessageSquare, DollarSign, Clock, Briefcase, HeadphonesIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
 
 const roles = [
   { icon: TrendingUp, title: "Sales development representatives" },

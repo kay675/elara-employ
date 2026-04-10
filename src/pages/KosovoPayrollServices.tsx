@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, DollarSign, FileText, Shield, Clock, CheckCircle, Calculator, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
 
 const services = [
   { icon: DollarSign, title: "Salary processing", description: "Monthly payroll calculated and paid on time in local currency." },
