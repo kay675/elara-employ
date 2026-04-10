@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, HeadphonesIcon, TrendingUp, Briefcase, Users, Calculator, Megaphone, Code, FolderOpen, CheckCircle, Building, Zap, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
 
 const departments = [
   { icon: HeadphonesIcon, title: "Customer support" },

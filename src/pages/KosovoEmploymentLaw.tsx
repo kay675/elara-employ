@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, FileText, Clock, Shield, Users, Briefcase, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
 
 const keyAreas = [
   { icon: FileText, title: "Employment contracts", description: "Written contracts are required under Kosovo law. They must specify role, salary, working hours and notice periods." },

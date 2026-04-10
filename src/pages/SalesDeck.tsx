@@ -307,7 +307,7 @@ const SalesDeck = () => {
             Book a 30-minute call to discuss your hiring needs and how Elara can help.
           </p>
           <div className="bg-purple-100 print-bg p-8 rounded-lg mt-8">
-            <a href="https://calendar.app.google/ZgtedFMv5cXSefYU9" target="_blank" rel="noopener noreferrer" className="font-bold text-lg text-purple-700 underline hover:text-purple-900">
+            <a href="https://calendar.app.google/aMeKYh884UyKZX9j9" target="_blank" rel="noopener noreferrer" className="font-bold text-lg text-purple-700 underline hover:text-purple-900">
               Book a 30-min Hiring Plan Call →
             </a>
           </div>

@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/select";
 import { CheckCircle, ArrowRight, Calculator, TrendingDown, Globe, GraduationCap, Clock, Building2 } from "lucide-react";
 
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
 
 const EUR_TO_GBP = 0.86;
 

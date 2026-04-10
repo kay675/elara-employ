@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, HeadphonesIcon, TrendingUp, FileText, Settings, Users, GraduationCap, DollarSign, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const CTA_LINK = "https://calendar.app.google/ZgtedFMv5cXSefYU9";
+const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
 
 const salaryRoles = [
   { icon: HeadphonesIcon, title: "Customer support agents", range: "€400 – €800 /month" },
