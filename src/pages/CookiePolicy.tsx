@@ -38,9 +38,9 @@ const CookiePolicy = () => {
             <p className="text-muted-foreground leading-relaxed">
               We use the following categories of cookies:
             </p>
-            <ul className="list-disc list-inside text-muted-foreground mt-4 space-y-2">
+            <ul className="list-disc list-inside text-muted-foreground mt-4 space-y-4">
               <li><strong>Strictly Necessary Cookies:</strong> Required for the website to function and cannot be switched off.</li>
-              <li><strong>Analytics Cookies:</strong> Help us understand how visitors use our website so we can improve performance.</li>
+              <li><strong>Analytics Cookies:</strong> We use Google Analytics to collect information about how visitors use our website. This includes data such as pages visited, time spent on the site, and interactions. This data may include anonymised IP addresses, browser type, device type, and general location (country-level). This information is used to improve our website and services. Google Analytics cookies may remain on your device for up to 2 years, depending on the specific cookie.</li>
               <li><strong>Functional Cookies:</strong> Enable enhanced functionality and personalisation.</li>
               <li><strong>Marketing Cookies:</strong> Used to deliver relevant content and measure campaign effectiveness.</li>
             </ul>
@@ -49,7 +49,7 @@ const CookiePolicy = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Managing Cookies</h2>
             <p className="text-muted-foreground leading-relaxed">
-              You can manage or withdraw consent at any time through your browser settings or our cookie preferences tool.
+              You can manage or withdraw your consent at any time through our cookie banner or your browser settings. We will only place analytics and marketing cookies on your device with your consent.
             </p>
           </section>
 
