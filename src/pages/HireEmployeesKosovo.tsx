@@ -5,8 +5,30 @@ import CookieConsent from "@/components/CookieConsent";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, HeadphonesIcon, TrendingUp, Briefcase, Users, Calculator, Megaphone, Code, FolderOpen, MessageSquare, DollarSign, Clock, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import DirectAnswer from "@/components/seo/DirectAnswer";
+import VisibleFAQ from "@/components/seo/VisibleFAQ";
+import WhyElara from "@/components/seo/WhyElara";
+import { ServiceSchema, MetaTags } from "@/components/seo/PageSchema";
 
 const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
+
+const faqs = [
+  { question: "How do I hire an employee in Kosovo without a local entity?", answer: "Use an Employer of Record (EOR) like Elara. We become the legal employer in Kosovo, issue compliant employment contracts and run payroll, while your team manages the work." },
+  { question: "How long does hiring in Kosovo take?", answer: "Typically 7–14 days from signed agreement to a fully onboarded employee, including contracts, payroll setup and compliance registrations." },
+  { question: "What does it cost to hire in Kosovo through Elara?", answer: "Pricing is a transparent monthly fee per employee on top of gross salary, covering employment, payroll, tax filings and HR administration." },
+  { question: "What employment benefits are required in Kosovo?", answer: "Statutory benefits include paid annual leave, public holidays and employer social security and pension contributions, all administered by Elara." },
+  { question: "Can I hire across multiple roles or departments?", answer: "Yes. Companies hire customer support, sales, operations, finance, marketing, engineering and back-office staff through Elara — from one role to entire teams." },
+  { question: "Do employees sign contracts with my company or with Elara?", answer: "Employees sign Kosovo-compliant contracts with Elara as the legal employer. Your company directs day-to-day work via a service agreement with Elara." },
+  { question: "What if I need to end an employment?", answer: "Terminations follow Kosovo labour law including notice periods. Elara manages the legal process so you remain compliant." },
+];
+
+const whyElaraPoints = [
+  "Specialist Kosovo focus — deep local knowledge, not a one-size-fits-all global EOR.",
+  "Hire across any department: support, sales, operations, finance, engineering and more.",
+  "Onboarding in 7–14 days under compliant local contracts.",
+  "Transparent monthly pricing with no entity setup cost.",
+  "Single point of contact for hiring, payroll and HR queries.",
+];
 
 const roles = [
   { icon: HeadphonesIcon, title: "Customer support teams" },
