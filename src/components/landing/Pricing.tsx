@@ -1,37 +1,14 @@
-import { Check, ArrowRight, Sparkles } from "lucide-react";
+import { Check, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CTA_LINK, openBooking } from "@/lib/booking";
 
-const plans = [
-  {
-    name: "Growth",
-    description: "For your first Kosovo hires",
-    price: "£250",
-    period: "/employee/month",
-    features: [
-      "Legal employment contracts",
-      "Payroll & tax filings",
-      "Social contributions",
-      "Compliant onboarding",
-    ],
-    highlighted: false,
-  },
-  {
-    name: "Enterprise",
-    description: "Full-service package",
-    price: "£450",
-    period: "/employee/month",
-    features: [
-      "Everything in Growth",
-      "Priority onboarding (7 days)",
-      "Benefits administration",
-      "Dedicated account manager",
-      "Quarterly compliance reviews",
-      "Equipment leasing",
-      "Workforce analytics",
-    ],
-    highlighted: true,
-  },
+const features = [
+  "Legal employment contracts",
+  "Payroll & tax filings",
+  "Social contributions",
+  "Compliant onboarding",
+  "Benefits administration",
+  "Priority onboarding",
 ];
 
 const Pricing = () => {
@@ -48,72 +25,41 @@ const Pricing = () => {
           </p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
-          {plans.map((plan, index) => (
-            <div
-              key={plan.name}
-              className={`relative rounded-2xl p-8 flex flex-col animate-fade-in-up ${
-                plan.highlighted
-                  ? "glass-card glow-purple border-primary/30"
-                  : "glass-card"
-              }`}
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              {/* Popular badge */}
-              {plan.highlighted && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <div className="flex items-center gap-1 bg-primary text-primary-foreground text-sm font-semibold px-4 py-1 rounded-full">
-                    <Sparkles className="w-4 h-4" />
-                    Most Popular
-                  </div>
-                </div>
-              )}
-
-              {/* Plan details */}
-              <div className="text-center mb-8">
-                <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
-                  {plan.description}
-                </p>
-                <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl font-bold gradient-text">
-                    {plan.price}
-                  </span>
-                  <span className="text-muted-foreground">{plan.period}</span>
-                </div>
+        {/* Single Pricing Card */}
+        <div className="max-w-lg mx-auto">
+          <div className="relative rounded-2xl p-8 md:p-10 flex flex-col glass-card glow-purple border-primary/30 animate-fade-in-up">
+            {/* Plan details */}
+            <div className="text-center mb-8">
+              <h3 className="text-xl font-bold mb-2">Elara Plan</h3>
+              <p className="text-muted-foreground text-sm mb-6">
+                Everything you need to hire compliantly in Kosovo
+              </p>
+              <div className="flex items-baseline justify-center gap-1 flex-wrap">
+                <span className="text-5xl font-bold gradient-text">€300</span>
+                <span className="text-muted-foreground">/ employee / month</span>
               </div>
-
-              {/* Features */}
-              <ul className="space-y-3 mb-8 flex-grow">
-                {plan.features.map((feature, i) => (
-                  <li key={i} className="flex items-center gap-3">
-                    <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3 text-primary" />
-                    </div>
-                    <span className="text-sm text-muted-foreground">
-                      {feature}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-
-              {/* CTA */}
-              <Button
-                asChild
-                className={`w-full h-12 ${
-                  plan.highlighted
-                    ? "btn-primary-glow border-0"
-                    : "btn-secondary-glass border"
-                }`}
-              >
-                <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" onClick={openBooking}>
-                  Get Started
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </a>
-              </Button>
             </div>
-          ))}
+
+            {/* Features */}
+            <ul className="space-y-3 mb-8 flex-grow">
+              {features.map((feature, i) => (
+                <li key={i} className="flex items-center gap-3">
+                  <div className="h-5 w-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                    <Check className="w-3 h-3 text-primary" />
+                  </div>
+                  <span className="text-sm text-muted-foreground">{feature}</span>
+                </li>
+              ))}
+            </ul>
+
+            {/* CTA */}
+            <Button asChild className="w-full h-12 btn-primary-glow border-0">
+              <a href={CTA_LINK} target="_blank" rel="noopener noreferrer" onClick={openBooking}>
+                Get Started
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
+            </Button>
+          </div>
         </div>
 
         {/* Scarcity line */}
