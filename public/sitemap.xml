@@ -56,4 +56,20 @@
     <loc>https://elara-eor.com/cookie-policy</loc>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://elara-eor.com/insights</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://elara-eor.com/insights/hire-employees-kosovo-without-entity</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://elara-eor.com/insights/employer-of-record-kosovo-how-it-works</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://elara-eor.com/insights/kosovo-payroll-guide-uk-eu-companies</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
