@@ -26,6 +26,7 @@ import KosovoEmploymentLaw from "./pages/KosovoEmploymentLaw";
 import SalaryCalculator from "./pages/SalaryCalculator";
 import CookiePolicy from "./pages/CookiePolicy";
 import ScrollToTop from "./components/ScrollToTop";
+import Analytics from "./components/Analytics";
 
 const queryClient = new QueryClient();
 
