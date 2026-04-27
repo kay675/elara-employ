@@ -147,6 +147,10 @@ const KosovoPayrollServices = () => {
           </div>
         </section>
 
+        <WhyElara points={whyElaraPoints} />
+
+        <VisibleFAQ faqs={payrollFaqs} />
+
         {/* CTA */}
         <section className="section-padding">
           <div className="mx-auto max-w-3xl text-center">
@@ -164,27 +168,18 @@ const KosovoPayrollServices = () => {
           </div>
         </section>
 
-        {/* Internal links */}
+        {/* Related resources */}
         <section className="section-padding pt-0">
           <div className="mx-auto max-w-3xl">
             <div className="glass-card p-6 md:p-8">
-              <h3 className="font-bold text-lg mb-4">Related Pages</h3>
+              <h2 className="font-bold text-2xl mb-4">Related resources</h2>
               <ul className="space-y-3">
-                <li>
-                  <Link to="/kosovo-employment-law" className="text-primary hover:underline">
-                    Kosovo Employment Law for Foreign Companies →
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/employer-of-record-kosovo" className="text-primary hover:underline">
-                    Employer of Record in Kosovo →
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/hire-employees-kosovo" className="text-primary hover:underline">
-                    Hire Employees in Kosovo →
-                  </Link>
-                </li>
+                <li><Link to="/employer-of-record-kosovo" className="text-primary hover:underline">Employer of Record in Kosovo →</Link></li>
+                <li><Link to="/hire-employees-kosovo" className="text-primary hover:underline">Hire Employees in Kosovo →</Link></li>
+                <li><Link to="/kosovo-employment-law" className="text-primary hover:underline">Kosovo Employment Law →</Link></li>
+                <li><Link to="/kosovo-salary-guide" className="text-primary hover:underline">Kosovo Salary Guide →</Link></li>
+                <li><Link to="/build-teams-in-kosovo" className="text-primary hover:underline">Build Teams in Kosovo →</Link></li>
+                <li><Link to="/insights/kosovo-payroll-guide-uk-eu-companies" className="text-primary hover:underline">Guide: Kosovo payroll guide for UK and EU companies →</Link></li>
               </ul>
             </div>
           </div>
