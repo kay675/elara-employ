@@ -89,6 +89,16 @@ const EmployerOfRecordKosovo = () => {
 
   return (
     <div className="min-h-screen">
+      <MetaTags
+        title="Employer of Record Kosovo | Hire Without a Local Entity | Elara"
+        description="Elara is a specialist Employer of Record (EOR) in Kosovo. Hire compliant local employees in 7–14 days without opening a company. Payroll, contracts and HR included."
+        canonical="https://elara-eor.com/employer-of-record-kosovo"
+      />
+      <ServiceSchema
+        name="Employer of Record in Kosovo"
+        description="Elara provides Employer of Record (EOR) services in Kosovo, allowing international companies to hire local employees compliantly without setting up a local entity."
+        url="https://elara-eor.com/employer-of-record-kosovo"
+      />
       <Navigation />
       <main>
         {/* Hero */}
@@ -111,6 +121,15 @@ const EmployerOfRecordKosovo = () => {
             </div>
           </div>
         </section>
+
+        <DirectAnswer heading="What is an Employer of Record in Kosovo?">
+          <p>
+            An Employer of Record (EOR) in Kosovo is a local company that legally employs staff on behalf of an overseas business. Elara acts as the legal employer for your team in Kosovo, handling employment contracts, payroll, tax filings and social contributions, while your company manages day-to-day work.
+          </p>
+          <p>
+            This page is for founders, COOs, hiring managers and operations leaders who want to hire in Kosovo quickly and compliantly without registering a local entity.
+          </p>
+        </DirectAnswer>
 
         {/* Why companies hire in Kosovo */}
         <section className="section-padding">
