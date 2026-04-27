@@ -20,15 +20,9 @@ const Guarantee = () => {
             </div>
 
             {/* Headline */}
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
               No Long-Term Contracts. <span className="gradient-text">Cancel Anytime.</span>
             </h2>
-
-            {/* Description */}
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Scale your team up or down with no lock-ins, penalties, or exit friction. 
-              We earn your business every month through quality service, not contractual obligations.
-            </p>
 
             {/* Trust points */}
             <div className="flex flex-wrap justify-center gap-6 mb-10">
