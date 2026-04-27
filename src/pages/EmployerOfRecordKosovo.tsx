@@ -5,12 +5,10 @@ import CookieConsent from "@/components/CookieConsent";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Globe, MessageSquare, DollarSign, Clock, Building2, CheckCircle, Users, FileText, Shield, Briefcase, HeadphonesIcon, TrendingUp, Settings, UserPlus } from "lucide-react";
 import { Link } from "react-router-dom";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import DirectAnswer from "@/components/seo/DirectAnswer";
+import VisibleFAQ from "@/components/seo/VisibleFAQ";
+import WhyElara from "@/components/seo/WhyElara";
+import { ServiceSchema, MetaTags } from "@/components/seo/PageSchema";
 
 const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
 
@@ -48,12 +46,40 @@ const benefits = [
 const faqs = [
   {
     question: "Do I need to open a company in Kosovo to hire employees?",
-    answer: "No. An Employer of Record allows companies to hire employees legally without setting up a local entity.",
+    answer: "No. An Employer of Record (EOR) like Elara becomes the legal employer in Kosovo on your behalf, so you can hire staff without registering a local entity.",
+  },
+  {
+    question: "How long does it take to hire someone in Kosovo through an EOR?",
+    answer: "Most hires are fully onboarded within 7–14 days of signing the agreement, including compliant employment contracts and payroll setup.",
+  },
+  {
+    question: "Who is the legal employer when using an EOR?",
+    answer: "Elara is the legal employer on paper in Kosovo. Your company directs the employee's day-to-day work while Elara handles contracts, payroll and compliance.",
   },
   {
     question: "What roles are commonly hired in Kosovo?",
-    answer: "Customer support teams, sales development representatives, operations staff and administrative roles.",
+    answer: "Customer support agents, sales development representatives, operations staff, finance and back-office teams are among the most commonly hired roles.",
   },
+  {
+    question: "Is using an EOR compliant with Kosovo labour law?",
+    answer: "Yes. Employees are hired under local Kosovo employment contracts with statutory benefits, social contributions and tax filings handled by Elara.",
+  },
+  {
+    question: "How is payroll managed?",
+    answer: "Elara processes monthly payroll in local currency, files income tax and social security contributions, and issues compliant payslips each month.",
+  },
+  {
+    question: "Can I terminate an employee if needed?",
+    answer: "Yes. Terminations follow Kosovo labour law including notice periods and any applicable severance. Elara manages the process end-to-end.",
+  },
+];
+
+const whyElaraPoints = [
+  "Specialist focus on Kosovo — not a generic global EOR.",
+  "Transparent monthly pricing with no hidden setup fees.",
+  "Compliant local employment contracts and payroll handled in-country.",
+  "Dedicated point of contact for every client.",
+  "Fast onboarding, typically 7–14 days from agreement to start date.",
 ];
 
 const EmployerOfRecordKosovo = () => {
