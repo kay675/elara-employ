@@ -5,8 +5,29 @@ import CookieConsent from "@/components/CookieConsent";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, DollarSign, FileText, Shield, Clock, CheckCircle, Calculator, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import DirectAnswer from "@/components/seo/DirectAnswer";
+import VisibleFAQ from "@/components/seo/VisibleFAQ";
+import WhyElara from "@/components/seo/WhyElara";
+import { ServiceSchema, MetaTags } from "@/components/seo/PageSchema";
 
 const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
+
+const payrollFaqs = [
+  { question: "Who is responsible for payroll when using Elara?", answer: "Elara processes monthly payroll in Kosovo, files income tax and social security contributions, and issues compliant payslips for every employee." },
+  { question: "Do I need a Kosovo entity to run payroll there?", answer: "No. Elara acts as the legal employer through its Employer of Record service, so payroll runs under our local entity — no setup required on your side." },
+  { question: "What taxes and contributions are deducted in Kosovo?", answer: "Personal income tax and pension contributions are calculated and remitted monthly. Elara handles all filings and reporting in line with Kosovo law." },
+  { question: "In what currency are employees paid?", answer: "Employees in Kosovo are paid in euros (EUR) into local bank accounts." },
+  { question: "How are payslips delivered?", answer: "Each employee receives a compliant monthly payslip detailing gross salary, deductions and net pay." },
+  { question: "Can payroll scale from one to many employees?", answer: "Yes. The same payroll process supports a single hire or a full team — pricing scales transparently per employee." },
+];
+
+const whyElaraPoints = [
+  "End-to-end Kosovo payroll: salary, tax filings, social contributions, payslips.",
+  "No need to register a local entity or appoint a local accountant.",
+  "Predictable monthly fee per employee.",
+  "Compliant with Kosovo tax law and employment regulations.",
+  "Direct support from a single point of contact.",
+];
 
 const services = [
   { icon: DollarSign, title: "Salary processing", description: "Monthly payroll calculated and paid on time in local currency." },
@@ -30,6 +51,17 @@ const KosovoPayrollServices = () => {
 
   return (
     <div className="min-h-screen">
+      <MetaTags
+        title="Kosovo Payroll Services | Compliant Monthly Payroll | Elara"
+        description="Outsource Kosovo payroll to Elara. Salary processing, tax filings, social contributions and payslips handled monthly — no local entity required."
+        canonical="https://elara-eor.com/kosovo-payroll-services"
+      />
+      <ServiceSchema
+        name="Kosovo Payroll Services"
+        description="Monthly payroll processing in Kosovo, including salary, tax filings, social contributions and payslips, delivered through Elara's Employer of Record service."
+        url="https://elara-eor.com/kosovo-payroll-services"
+        serviceType="Payroll Service"
+      />
       <Navigation />
       <main>
         {/* Hero */}
@@ -56,6 +88,14 @@ const KosovoPayrollServices = () => {
           </div>
         </section>
 
+        <DirectAnswer heading="What are payroll services in Kosovo?">
+          <p>
+            Payroll services in Kosovo cover the monthly calculation, payment and reporting of employee salaries, taxes and social contributions in line with Kosovo law. Elara delivers payroll as part of its Employer of Record service, so international companies can pay staff in Kosovo compliantly without a local entity or accountant.
+          </p>
+          <p>
+            This page is for finance leaders, founders and operations managers responsible for paying staff in Kosovo accurately and on time.
+          </p>
+        </DirectAnswer>
         {/* What's included */}
         <section className="section-padding">
           <div className="mx-auto max-w-7xl">
