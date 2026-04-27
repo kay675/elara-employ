@@ -5,8 +5,29 @@ import CookieConsent from "@/components/CookieConsent";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, HeadphonesIcon, TrendingUp, Briefcase, Users, Calculator, Megaphone, Code, FolderOpen, CheckCircle, Building, Zap, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
+import DirectAnswer from "@/components/seo/DirectAnswer";
+import VisibleFAQ from "@/components/seo/VisibleFAQ";
+import WhyElara from "@/components/seo/WhyElara";
+import { ServiceSchema, MetaTags } from "@/components/seo/PageSchema";
 
 const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
+
+const teamFaqs = [
+  { question: "Can I build a full department in Kosovo through Elara?", answer: "Yes. Companies use Elara to build entire teams in Kosovo — customer support, sales, operations, finance, marketing, engineering and back-office functions." },
+  { question: "How quickly can I scale a team in Kosovo?", answer: "Each hire is typically onboarded in 7–14 days. Companies regularly grow from one role to a full department within a few months." },
+  { question: "Do I need a Kosovo entity to hire a team?", answer: "No. Elara's Employer of Record service means you can hire as many employees as you need without registering a local company." },
+  { question: "Who manages the team day-to-day?", answer: "Your company directs all day-to-day work, priorities and performance. Elara is the legal employer and handles contracts, payroll, tax and HR." },
+  { question: "What roles are best suited to Kosovo?", answer: "Customer support, SDRs, operations, back-office finance and software engineering are common. Kosovo has a young, English-speaking workforce at competitive salary levels." },
+  { question: "How is pricing structured for teams?", answer: "Pricing is a transparent monthly fee per employee, on top of gross salary, with no setup or entity costs." },
+];
+
+const whyElaraPoints = [
+  "Build cross-functional teams in Kosovo without setting up a local company.",
+  "Compliant local contracts, payroll and HR included as standard.",
+  "Fast scaling — onboard each hire in 7–14 days.",
+  "Specialist Kosovo focus, not a generic global EOR.",
+  "Transparent monthly per-employee pricing.",
+];
 
 const departments = [
   { icon: HeadphonesIcon, title: "Customer support" },
