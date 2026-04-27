@@ -272,34 +272,9 @@ const EmployerOfRecordKosovo = () => {
           </div>
         </section>
 
-        {/* FAQ */}
-        <section className="section-padding">
-          <div className="mx-auto max-w-3xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                Frequently Asked <span className="gradient-text">Questions</span>
-              </h2>
-            </div>
-            <div className="glass-card p-6 md:p-8">
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqs.map((faq, index) => (
-                  <AccordionItem
-                    key={index}
-                    value={`item-${index}`}
-                    className="border-b border-border/50 last:border-0"
-                  >
-                    <AccordionTrigger className="text-left hover:no-underline hover:text-primary transition-colors py-6">
-                      <span className="font-semibold pr-4">{faq.question}</span>
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed pb-6">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </section>
+        <WhyElara points={whyElaraPoints} />
+
+        <VisibleFAQ faqs={faqs} />
 
         {/* CTA */}
         <section className="section-padding">
