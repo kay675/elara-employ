@@ -54,6 +54,17 @@ const BuildTeamsInKosovo = () => {
 
   return (
     <div className="min-h-screen">
+      <MetaTags
+        title="Build Teams in Kosovo | Scale Departments Compliantly | Elara"
+        description="Build full departments in Kosovo without opening a local entity. Elara's Employer of Record handles contracts, payroll and compliance as you scale."
+        canonical="https://elara-eor.com/build-teams-in-kosovo"
+      />
+      <ServiceSchema
+        name="Build Teams in Kosovo"
+        description="Build and scale full departments in Kosovo through Elara's Employer of Record service, with compliant employment contracts, payroll and HR included."
+        url="https://elara-eor.com/build-teams-in-kosovo"
+        serviceType="Team Building"
+      />
       <Navigation />
       <main>
         {/* Hero */}
@@ -72,6 +83,14 @@ const BuildTeamsInKosovo = () => {
           </div>
         </section>
 
+        <DirectAnswer heading="Building teams in Kosovo: how it works">
+          <p>
+            Building a team in Kosovo means hiring multiple full-time employees locally — typically across customer support, sales, operations, finance or engineering. With Elara as your Employer of Record, you can scale a team in Kosovo without opening a local entity. We handle contracts, payroll and compliance for every hire.
+          </p>
+          <p>
+            This page is for founders and operations leaders planning to grow a team or open a new operational hub in Kosovo.
+          </p>
+        </DirectAnswer>
         {/* Departments */}
         <section className="section-padding">
           <div className="mx-auto max-w-7xl">
@@ -156,27 +175,22 @@ const BuildTeamsInKosovo = () => {
           </div>
         </section>
 
-        {/* Internal links */}
+        <WhyElara points={whyElaraPoints} />
+
+        <VisibleFAQ faqs={teamFaqs} />
+
+        {/* Related resources */}
         <section className="section-padding pt-0">
           <div className="mx-auto max-w-3xl">
             <div className="glass-card p-6 md:p-8">
-              <h3 className="font-bold text-lg mb-4">Related Pages</h3>
+              <h2 className="font-bold text-2xl mb-4">Related resources</h2>
               <ul className="space-y-3">
-                <li>
-                  <Link to="/employer-of-record-kosovo" className="text-primary hover:underline">
-                    Employer of Record in Kosovo →
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/hire-employees-kosovo" className="text-primary hover:underline">
-                    Hire Employees in Kosovo →
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/kosovo-salary-guide" className="text-primary hover:underline">
-                    Kosovo Salary Guide →
-                  </Link>
-                </li>
+                <li><Link to="/employer-of-record-kosovo" className="text-primary hover:underline">Employer of Record in Kosovo →</Link></li>
+                <li><Link to="/hire-employees-kosovo" className="text-primary hover:underline">Hire Employees in Kosovo →</Link></li>
+                <li><Link to="/kosovo-payroll-services" className="text-primary hover:underline">Payroll Services in Kosovo →</Link></li>
+                <li><Link to="/kosovo-employment-law" className="text-primary hover:underline">Kosovo Employment Law →</Link></li>
+                <li><Link to="/kosovo-salary-guide" className="text-primary hover:underline">Kosovo Salary Guide →</Link></li>
+                <li><Link to="/insights" className="text-primary hover:underline">Insights & guides →</Link></li>
               </ul>
             </div>
           </div>
