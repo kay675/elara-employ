@@ -5,8 +5,30 @@ import CookieConsent from "@/components/CookieConsent";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, HeadphonesIcon, TrendingUp, Briefcase, Users, Calculator, Megaphone, Code, FolderOpen, MessageSquare, DollarSign, Clock, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import DirectAnswer from "@/components/seo/DirectAnswer";
+import VisibleFAQ from "@/components/seo/VisibleFAQ";
+import WhyElara from "@/components/seo/WhyElara";
+import { ServiceSchema, MetaTags } from "@/components/seo/PageSchema";
 
 const CTA_LINK = "https://calendar.app.google/aMeKYh884UyKZX9j9";
+
+const faqs = [
+  { question: "How do I hire an employee in Kosovo without a local entity?", answer: "Use an Employer of Record (EOR) like Elara. We become the legal employer in Kosovo, issue compliant employment contracts and run payroll, while your team manages the work." },
+  { question: "How long does hiring in Kosovo take?", answer: "Typically 7–14 days from signed agreement to a fully onboarded employee, including contracts, payroll setup and compliance registrations." },
+  { question: "What does it cost to hire in Kosovo through Elara?", answer: "Pricing is a transparent monthly fee per employee on top of gross salary, covering employment, payroll, tax filings and HR administration." },
+  { question: "What employment benefits are required in Kosovo?", answer: "Statutory benefits include paid annual leave, public holidays and employer social security and pension contributions, all administered by Elara." },
+  { question: "Can I hire across multiple roles or departments?", answer: "Yes. Companies hire customer support, sales, operations, finance, marketing, engineering and back-office staff through Elara — from one role to entire teams." },
+  { question: "Do employees sign contracts with my company or with Elara?", answer: "Employees sign Kosovo-compliant contracts with Elara as the legal employer. Your company directs day-to-day work via a service agreement with Elara." },
+  { question: "What if I need to end an employment?", answer: "Terminations follow Kosovo labour law including notice periods. Elara manages the legal process so you remain compliant." },
+];
+
+const whyElaraPoints = [
+  "Specialist Kosovo focus — deep local knowledge, not a one-size-fits-all global EOR.",
+  "Hire across any department: support, sales, operations, finance, engineering and more.",
+  "Onboarding in 7–14 days under compliant local contracts.",
+  "Transparent monthly pricing with no entity setup cost.",
+  "Single point of contact for hiring, payroll and HR queries.",
+];
 
 const roles = [
   { icon: HeadphonesIcon, title: "Customer support teams" },
@@ -33,6 +55,17 @@ const HireEmployeesKosovo = () => {
 
   return (
     <div className="min-h-screen">
+      <MetaTags
+        title="Hire Employees in Kosovo | No Local Entity Needed | Elara"
+        description="Hire full-time employees in Kosovo without opening a local company. Elara handles employment contracts, payroll, tax and compliance — onboarding in 7–14 days."
+        canonical="https://elara-eor.com/hire-employees-kosovo"
+      />
+      <ServiceSchema
+        name="Hire Employees in Kosovo"
+        description="Hire compliant full-time employees in Kosovo through Elara's Employer of Record service, without setting up a local entity."
+        url="https://elara-eor.com/hire-employees-kosovo"
+        serviceType="Employment Hiring"
+      />
       <Navigation />
       <main>
         {/* Hero */}
@@ -50,6 +83,15 @@ const HireEmployeesKosovo = () => {
             </p>
           </div>
         </section>
+
+        <DirectAnswer heading="How to hire employees in Kosovo">
+          <p>
+            To hire employees in Kosovo without opening a local company, partner with an Employer of Record (EOR). Elara becomes the legal employer in Kosovo, issues compliant Albanian-language employment contracts, runs monthly payroll and files taxes and social contributions on your behalf.
+          </p>
+          <p>
+            This page is for hiring managers, founders and operations leaders who want to recruit full-time staff in Kosovo quickly and compliantly.
+          </p>
+        </DirectAnswer>
 
         {/* Roles */}
         <section className="section-padding">
@@ -135,27 +177,22 @@ const HireEmployeesKosovo = () => {
           </div>
         </section>
 
-        {/* Internal links */}
+        <WhyElara points={whyElaraPoints} />
+
+        <VisibleFAQ faqs={faqs} />
+
+        {/* Related resources */}
         <section className="section-padding pt-0">
           <div className="mx-auto max-w-3xl">
             <div className="glass-card p-6 md:p-8">
-              <h3 className="font-bold text-lg mb-4">Related Pages</h3>
+              <h2 className="font-bold text-2xl mb-4">Related resources</h2>
               <ul className="space-y-3">
-                <li>
-                  <Link to="/kosovo-payroll-services" className="text-primary hover:underline">
-                    Payroll Services in Kosovo →
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/employer-of-record-kosovo" className="text-primary hover:underline">
-                    Employer of Record in Kosovo →
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/kosovo-salary-guide" className="text-primary hover:underline">
-                    Kosovo Salary Guide →
-                  </Link>
-                </li>
+                <li><Link to="/employer-of-record-kosovo" className="text-primary hover:underline">Employer of Record in Kosovo →</Link></li>
+                <li><Link to="/kosovo-payroll-services" className="text-primary hover:underline">Payroll Services in Kosovo →</Link></li>
+                <li><Link to="/kosovo-employment-law" className="text-primary hover:underline">Kosovo Employment Law →</Link></li>
+                <li><Link to="/kosovo-salary-guide" className="text-primary hover:underline">Kosovo Salary Guide →</Link></li>
+                <li><Link to="/build-teams-in-kosovo" className="text-primary hover:underline">Build Teams in Kosovo →</Link></li>
+                <li><Link to="/insights/hire-employees-kosovo-without-entity" className="text-primary hover:underline">Guide: Hire employees in Kosovo without an entity →</Link></li>
               </ul>
             </div>
           </div>

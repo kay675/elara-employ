@@ -12,6 +12,8 @@ import Guarantee from "@/components/landing/Guarantee";
 import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import { HomeDirectAnswer, HiringInKosovoLinks, HomeQuickFAQ } from "@/components/landing/HomeSeoSections";
+import { MetaTags } from "@/components/seo/PageSchema";
 
 const Index = () => {
   const location = useLocation();
@@ -34,9 +36,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <MetaTags
+        title="Elara EOR – Hire Talent in Kosovo Without Opening a Company"
+        description="Elara EOR helps you hire, onboard and manage employees in Kosovo — compliantly and affordably. Specialist Employer of Record for Kosovo."
+        canonical="https://elara-eor.com/"
+      />
       <Navigation />
       <main>
         <Hero />
+        <HomeDirectAnswer />
         <Results />
         <HowItWorks />
         <Benefits />
@@ -44,6 +52,8 @@ const Index = () => {
         <Testimonials />
         <Pricing />
         <Guarantee />
+        <HiringInKosovoLinks />
+        <HomeQuickFAQ />
         <FAQ />
       </main>
       <Footer />

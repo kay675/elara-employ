@@ -3,6 +3,11 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import Insights from "./pages/Insights";
+import InsightHireWithoutEntity from "./pages/insights/HireWithoutEntity";
+import InsightEorHowItWorks from "./pages/insights/EorHowItWorks";
+import InsightKosovoPayrollGuide from "./pages/insights/KosovoPayrollGuide";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -25,6 +30,7 @@ import ScrollToTop from "./components/ScrollToTop";
 const queryClient = new QueryClient();
 
 const App = () => (
+  <HelmetProvider>
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -49,12 +55,17 @@ const App = () => (
           <Route path="/salary-calculator" element={<Navigate to="/savings-calculator" replace />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/banner-generator" element={<BannerGenerator />} />
+          <Route path="/insights" element={<Insights />} />
+          <Route path="/insights/hire-employees-kosovo-without-entity" element={<InsightHireWithoutEntity />} />
+          <Route path="/insights/employer-of-record-kosovo-how-it-works" element={<InsightEorHowItWorks />} />
+          <Route path="/insights/kosovo-payroll-guide-uk-eu-companies" element={<InsightKosovoPayrollGuide />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
